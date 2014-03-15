@@ -1,6 +1,70 @@
-<div class="jumbotron">
-<h2>Add New Order</h2>
- 
-{{ message }}
-
-</div>
+<div class="well row-fluid">
+		<div class="span5 offset1">
+			<table class="table">
+			<tbody><tr>
+			<td><div class="lead"> New Vehicle</div></td>
+			<td><input id="NEW_VEH" class="text-right calc-display" type="text" value="0"></td>
+			<td><div id="NEW_VEHerrmsg" class="errmsg"></div></td>
+			</tr>
+			<tr>
+			<td><div class="lead">IDV</div></td>
+			<td><input id="IDV" class="text-right calc-display" type="text" value="0"></td>
+			<td><div id="IDVerrmsg" class="errmsg"></div></td>
+			</tr>
+			<tr>
+			<td><div class="lead">PA To Passenger</div></td>
+			<td><input class="text-right calc-display" id="PA_TO_PASS" type="text" value="0"></td>
+			<td><div id="PA_TO_PASSerrmsg" class="errmsg"></div></td>
+			</tr>
+			<tr>
+			<td><div class="lead">PA Amount</div></td>
+			<td><input class="text-right calc-display" id="PA_AMT" type="text" value="0"></td>
+			<td><div id="PA_AMTerrmsg" class="errmsg"></div></td>
+			</tr>
+			<tr>
+			<td><div class="lead">Age of Vehicle</div></td>
+			<td><select class="combo-display" id="AGE"><option value="upto_5">Upto 5 Years</option><option value="upto_10">Upto 10 Years</option><option value="over_10">Above 10 Years</option></select></td>
+			<td><div id="AGEerrmsg" class="errmsg"></div></td>
+			</tr>
+			
+			<tr>
+			<td><div class="lead">Cubic Capacity</div></td>
+			<td><select class="combo-display" id="CC"><option value="upto_75">Upto 75</option><option value="upto_150">Upto 150</option><option value="above_150">151 to 350</option><option value="above_350">Above 350</option></select></td>
+			<td><div id="CCerrmsg" class="errmsg"></div></td>
+			</tr>
+			<tr>
+			<td><div class="lead">No Claim Bonus</div></td>
+				<td>
+					<select class="combo-display" id="NCB">
+						<option value="0">0</option>
+						<option value="20">20</option>
+						<option value="25">25</option>
+						<option value="35">35</option>
+						<option value="45">45</option>
+						<option value="50">50</option>						
+					</select>
+				</td>
+			<td><div class="errmsg"></div></td>
+			</tr>
+			
+			<tr>
+			<td><div class="lead">Nil Depreciation %</div></td>
+				<td>
+					<select class="combo-display" id="NIL_DEP">
+						<option value="0">0</option>
+						<option value="15">15</option>
+						<option value="20">20</option>
+						<option value="25">25</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+			<td><a id="resetButton" class="btn btn-primary" href="#"><i class="icon-star"></i> Reset</a></td>
+			
+			<td><a id="calculateButton" class="btn btn-primary" href="#"><i class="icon-arrow-right icon-white"></i> Calculate</a></td>
+			</tr>
+			
+			</tbody></table>
+		</div>
+		
+	</div>
