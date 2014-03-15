@@ -21,11 +21,7 @@ sampleApp.config(['$routeProvider',
 }]);
  
  
-sampleApp.controller('AddOrderController', function($scope) {
-     
-    $scope.message = 'This is Add new order screen';
-     
-});
+
  
  
 sampleApp.controller('ShowOrdersController', function($scope) {
